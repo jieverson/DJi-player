@@ -1,19 +1,48 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-  </body>
+    <title>~ DJi Player ~</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="https://raw.githubusercontent.com/jieverson/jieverson.github.io/master/image/eu.png"></img>
+    </header>
+    
+    <main>
+        <canvas></canvas>
 
-  <script>
-    // You can also require other files to run in this process
-    require('./renderer.js')
-  </script>
+        <!--
+        <p id="author" hidden><i class="fa fa-soundcloud"></i> Music: <a target="_blank"></a></p>
+
+        <div>
+            <button type="button" onclick="nextSound()">
+                <i class="fa fa-soundcloud"></i> Next Sound
+            </button>
+
+            <button type="button" onclick="upload()">
+                <i class="fa fa-cloud-upload"></i> Upload
+            </button>
+
+            <input type="file" onchange="file_uploaded(this)"/>
+        </div>
+
+        <input type="range" value="20000" min="0" max="20000" oninput="changeFrequency(this)" />
+        -->
+    </main>
+
+    <footer>
+        Made with <i class="fa fa-heart"></i> by Jiéverson Maissiat
+    </footer>
+
+    <script src="https://use.fontawesome.com/de272cae62.js"></script>
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+</body>
 </html>
